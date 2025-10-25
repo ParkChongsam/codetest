@@ -285,12 +285,31 @@ main {
     font-weight: bold;
 }
 
-footer {
+.main-footer {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 3rem;
+    padding: 2rem 1rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
     text-align: center;
-    margin-top: 2rem;
     color: white;
-    opacity: 0.9;
-    font-size: 0.875rem;
+}
+
+.footer-content p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+    opacity: 0.95;
+}
+
+.footer-copyright {
+    font-size: 0.85rem;
+    opacity: 0.8;
+    margin-top: 0.75rem;
 }
 
 @media (max-width: 768px) {
