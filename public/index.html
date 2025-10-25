@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제품 가치 추천 - 새로운 관점의 발견</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💡 제품 가치 추천</h1>
+            <p class="subtitle">당신의 제품을 새로운 관점에서 바라보세요</p>
+        </header>
+
+        <main>
+            <section class="input-section">
+                <div class="input-wrapper">
+                    <input
+                        type="text"
+                        id="productInput"
+                        placeholder="제품명을 입력하세요 (예: 우산, 텀블러, 책상)"
+                        autocomplete="off"
+                    />
+                    <button id="recommendBtn" class="btn-primary">
+                        추천받기
+                    </button>
+                </div>
+                <div class="examples">
+                    <span class="example-label">예시:</span>
+                    <button class="example-btn" data-product="우산">우산</button>
+                    <button class="example-btn" data-product="텀블러">텀블러</button>
+                    <button class="example-btn" data-product="책상">책상</button>
+                    <button class="example-btn" data-product="신발">신발</button>
+                    <button class="example-btn" data-product="가방">가방</button>
+                </div>
+            </section>
+
+            <section id="loadingSection" class="loading-section hidden">
+                <div class="loading-spinner"></div>
+                <p>창의적인 아이디어를 생성하고 있습니다...</p>
+            </section>
+
+            <section id="resultsSection" class="results-section hidden">
+                <div class="results-header">
+                    <h2 id="resultTitle"></h2>
+                    <p class="result-subtitle">새로운 관점에서 발견한 가치있는 아이디어입니다</p>
+                </div>
+                <div id="recommendationsList" class="recommendations-grid"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>제품에 새로운 가치를 더하는 아이디어 추천 서비스</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
